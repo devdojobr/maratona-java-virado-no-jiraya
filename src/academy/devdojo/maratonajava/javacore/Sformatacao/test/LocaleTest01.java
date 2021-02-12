@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Rdatas.test;
+package academy.devdojo.maratonajava.javacore.Sformatacao.test;
 
 import academy.devdojo.maratonajava.javacore.Gassociacao.dominio.Local;
 
