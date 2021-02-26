@@ -24,7 +24,6 @@ public class FileTest01 {
             if(exists){
                 System.out.println("Deleted "+file.delete());
             }
-
         } catch (IOException exception) {
             exception.printStackTrace();
         }
