@@ -3,6 +3,7 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.test;
 import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Smartphone;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SmartphoneListTest01 {
