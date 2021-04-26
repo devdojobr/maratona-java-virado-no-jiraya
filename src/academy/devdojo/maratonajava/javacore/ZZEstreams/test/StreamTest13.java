@@ -28,15 +28,18 @@ public class StreamTest13 {
     public static void main(String[] args) {
         Map<Promotion, List<LightNovel>> collect = lightNovels
                 .stream()
-                .collect(groupingBy(ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
+                .collect(groupingBy(StreamTest13::getPromotion
                 ));
         System.out.println(collect);
         // Map<Category, Map<Promotion, List<LightNovel>>>
 
         Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels
                 .stream()
-                .collect(groupingBy(LightNovel::getCategory, groupingBy(ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
-                        )));
+                .collect(groupingBy(LightNovel::getCategory, groupingBy(StreamTest13::getPromotion)));
         System.out.println(collect1);
+    }
+
+    private static Promotion getPromotion(LightNovel ln) {
+        return ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE;
     }
 }
