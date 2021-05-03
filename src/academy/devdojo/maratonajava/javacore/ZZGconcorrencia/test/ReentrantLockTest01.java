@@ -1,6 +1,5 @@
 package academy.devdojo.maratonajava.javacore.ZZGconcorrencia.test;
 
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 class Worker implements Runnable {
@@ -28,7 +27,6 @@ class Worker implements Runnable {
         }
     }
 }
-
 public class ReentrantLockTest01 {
     public static void main(String[] args) {
         ReentrantLock lock = new ReentrantLock(true);
