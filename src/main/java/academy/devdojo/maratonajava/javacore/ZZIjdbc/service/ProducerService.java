@@ -21,6 +21,11 @@ public class ProducerService {
         ProducerRepository.update(producer);
     }
 
+    public static void updatePreparedStatement(Producer producer) {
+        requireValidId(producer.getId());
+        ProducerRepository.updatePreparedStatement(producer);
+    }
+
     public static List<Producer> findAll() {
         return ProducerRepository.findAll();
     }
@@ -54,7 +59,7 @@ public class ProducerService {
     }
 
     public static void findByNameAndDelete(String name) {
-         ProducerRepository.findByNameAndDelete(name);
+        ProducerRepository.findByNameAndDelete(name);
     }
 
 
