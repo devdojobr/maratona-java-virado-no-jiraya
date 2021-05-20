@@ -36,12 +36,21 @@ public class ProducerService {
     public static void showDriverMetaData() {
         ProducerRepository.showDriverMetaData();
     }
+
     public static void showTypeScrollWorking() {
         ProducerRepository.showTypeScrollWorking();
     }
 
     public static List<Producer> findByNameAndUpdateToUpperCase(String name) {
         return ProducerRepository.findByNameAndUpdateToUpperCase(name);
+    }
+
+    public static List<Producer> findByNameAndInsertWhenNotFound(String name) {
+        return ProducerRepository.findByNameAndInsertWhenNotFound(name);
+    }
+
+    public static void findByNameAndDelete(String name) {
+         ProducerRepository.findByNameAndDelete(name);
     }
 
 
