@@ -15,7 +15,6 @@ public class CustomRowSetListener implements RowSetListener {
         log.info("Command execute triggered");
     }
 
-
     @Override
     public void rowChanged(RowSetEvent event) {
         log.info("Row inserted, updated or deleted");
